@@ -33,3 +33,21 @@ button
   button
     border-radius: 0
     width: 100%
+
+@custom-selector --heading h1, h2
+@custom-selector :--link :hover, :active
+
+@custom-selector --heading h1, h2
+@custom-selector :--any-link :link, :visited
+
+a:hover
+  color: red
+
+a:--any-link
+  color: blue
+
+--heading
+  color: #fff
+
+article --heading
+  color: #000
